@@ -1,0 +1,11 @@
+<template>
+    <lightning-card title="Filtrar Tarefas" icon-name="standard:filter">
+        <lightning-combobox
+            label="Status"
+            value={selectedStatus}
+            placeholder="Selecione um status"
+            options={statusOptions}
+            onchange={handleStatusChange}
+        ></lightning-combobox>
+    </lightning-card>
+</template>

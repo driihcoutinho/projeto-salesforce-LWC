@@ -1,0 +1,23 @@
+<template>
+    <lightning-card title="Formulário de Tarefa" icon-name="standard:task">
+        <lightning-input
+            label="Nome da Tarefa"
+            value={taskName}
+            onchange={handleTaskNameChange}
+            class="slds-m-bottom_small"
+        ></lightning-input>
+        <lightning-combobox
+            label="Status"
+            value={taskStatus}
+            placeholder="Selecione um status"
+            options={statusOptions}
+            onchange={handleStatusChange}
+            class="slds-m-bottom_small"
+        ></lightning-combobox>
+        <lightning-button
+            label="Salvar"
+            onclick={handleSave}
+            class="slds-m-top_medium"
+        ></lightning-button>
+    </lightning-card>
+</template>

@@ -1,0 +1,12 @@
+<template>
+    <lightning-card title="Lista de Tarefas" icon-name="standard:task">
+        <ul class="slds-list_dotted">
+            <template for:each={tasksToDisplay} for:item="task">
+                <li key={task.id} class="slds-item">
+                    <span class="slds-m-right_small">{task.name}</span>
+                    <span class="slds-badge slds-m-left_small">{task.status}</span>
+                </li>
+            </template>
+        </ul>
+    </lightning-card>
+</template>
